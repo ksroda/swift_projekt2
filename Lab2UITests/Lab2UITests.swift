@@ -1,14 +1,14 @@
 //
-//  swift_projekt2UITests.swift
-//  swift_projekt2UITests
+//  Lab2UITests.swift
+//  Lab2UITests
 //
-//  Created by Użytkownik Gość on 03.11.2016.
+//  Created by Użytkownik Gość on 12.10.2016.
 //  Copyright © 2016 Użytkownik Gość. All rights reserved.
 //
 
 import XCTest
 
-class swift_projekt2UITests: XCTestCase {
+class Lab2UITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

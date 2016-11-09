@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  swift_projekt2
+//  Lab2
 //
-//  Created by Użytkownik Gość on 03.11.2016.
+//  Created by Użytkownik Gość on 12.10.2016.
 //  Copyright © 2016 Użytkownik Gość. All rights reserved.
 //
 

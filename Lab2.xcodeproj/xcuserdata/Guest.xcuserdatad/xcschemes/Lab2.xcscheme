@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC2BDCC21DCB82DB0015017A"
-               BuildableName = "swift_projekt2.app"
-               BlueprintName = "swift_projekt2"
-               ReferencedContainer = "container:swift_projekt2.xcodeproj">
+               BlueprintIdentifier = "AC0DCB0F1DAE6EBC00402E20"
+               BuildableName = "Lab2.app"
+               BlueprintName = "Lab2"
+               ReferencedContainer = "container:Lab2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC2BDCD61DCB82DB0015017A"
-               BuildableName = "swift_projekt2Tests.xctest"
-               BlueprintName = "swift_projekt2Tests"
-               ReferencedContainer = "container:swift_projekt2.xcodeproj">
+               BlueprintIdentifier = "AC0DCB231DAE6EBC00402E20"
+               BuildableName = "Lab2Tests.xctest"
+               BlueprintName = "Lab2Tests"
+               ReferencedContainer = "container:Lab2.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC2BDCE11DCB82DB0015017A"
-               BuildableName = "swift_projekt2UITests.xctest"
-               BlueprintName = "swift_projekt2UITests"
-               ReferencedContainer = "container:swift_projekt2.xcodeproj">
+               BlueprintIdentifier = "AC0DCB2E1DAE6EBD00402E20"
+               BuildableName = "Lab2UITests.xctest"
+               BlueprintName = "Lab2UITests"
+               ReferencedContainer = "container:Lab2.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AC2BDCC21DCB82DB0015017A"
-            BuildableName = "swift_projekt2.app"
-            BlueprintName = "swift_projekt2"
-            ReferencedContainer = "container:swift_projekt2.xcodeproj">
+            BlueprintIdentifier = "AC0DCB0F1DAE6EBC00402E20"
+            BuildableName = "Lab2.app"
+            BlueprintName = "Lab2"
+            ReferencedContainer = "container:Lab2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AC2BDCC21DCB82DB0015017A"
-            BuildableName = "swift_projekt2.app"
-            BlueprintName = "swift_projekt2"
-            ReferencedContainer = "container:swift_projekt2.xcodeproj">
+            BlueprintIdentifier = "AC0DCB0F1DAE6EBC00402E20"
+            BuildableName = "Lab2.app"
+            BlueprintName = "Lab2"
+            ReferencedContainer = "container:Lab2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AC2BDCC21DCB82DB0015017A"
-            BuildableName = "swift_projekt2.app"
-            BlueprintName = "swift_projekt2"
-            ReferencedContainer = "container:swift_projekt2.xcodeproj">
+            BlueprintIdentifier = "AC0DCB0F1DAE6EBC00402E20"
+            BuildableName = "Lab2.app"
+            BlueprintName = "Lab2"
+            ReferencedContainer = "container:Lab2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
