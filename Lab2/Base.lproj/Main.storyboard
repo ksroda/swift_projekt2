@@ -160,7 +160,6 @@
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="SaveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sM-oJ-5lL"/>
-                                            <segue destination="08h-2K-vDs" kind="show" id="3fF-ji-6NJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdY-oa-d4F">
@@ -168,14 +167,13 @@
                                         <state key="normal" title="Delete"/>
                                         <connections>
                                             <action selector="DeleteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VXB-ng-G3i"/>
-                                            <segue destination="08h-2K-vDs" kind="show" id="msj-58-YEl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6K-Wa-Mvn">
                                         <rect key="frame" x="119" y="0.0" width="48" height="30"/>
                                         <state key="normal" title="Cancel"/>
                                         <connections>
-                                            <segue destination="08h-2K-vDs" kind="show" id="oGz-uy-GhM"/>
+                                            <action selector="AnulujButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0i-Vs-JdF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -231,7 +229,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oGz-uy-GhM"/>
         <segue reference="NOK-5u-mGK"/>
     </inferredMetricsTieBreakers>
 </document>

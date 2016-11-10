@@ -25,6 +25,32 @@ class Albums{
         }
         
         albums = NSMutableArray(contentsOfFile: albumsDocPath)
+        
+        
     }
+    
+    func save(){
+        albums!.writeToFile(albumsDocPath, atomically: true)
+    }
+    
+    func delete(i: Int){
+        albums?.removeObjectAtIndex(i)
+        save()
+    }
+    
+    func edit(i: Int, newAlbum: NSDictionary){
+        albums!.replaceObjectAtIndex(i, withObject: newAlbum)
+    }
+    
+    func savePressed(i: Int, newAlbum: NSDictionary){
+        if ( i == (albums?.count)! ) {
+            albums!.addObject(newAlbum)
+        } else {
+            edit(i, newAlbum: newAlbum)
+        }
+        
+        save()
+    }
+ 
     
 }

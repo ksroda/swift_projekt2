@@ -34,30 +34,24 @@ class ViewController: UIViewController {
     
     //------------BUTTONS------------------------------------
 
+    @IBAction func AnulujButtonPressed(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
+    }
     
     @IBAction func SaveButtonPressed(sender: AnyObject) {
         
-        var newAlbum : NSDictionary = [
+        let newAlbum : NSDictionary = [
             "artist" : ArtistField.text!,
             "title" : TitleField.text!,
             "genre" : GenreField.text!,
-            "year" : Int(YearField.text!)!,
+            "date" : Int(YearField.text!)!,
             "rating" : Int(RateField.text!)!
         ]
-    
-        if ( i == (albums?.count)! ) {
-           albums!.addObject(newAlbum)
-            i = 0
-            changeValues()
-        } else {
-           edit(i, newAlbum: newAlbum)
-        }
-        //albums?.writeToFile("/albums.plist", atomically: <#T##Bool#>)
         
-        DeleteButton.enabled = true
+        Albums.sharedInstance.savePressed(i, newAlbum: newAlbum)
+        navigationController?.popViewControllerAnimated(true)
     }
     
-
     
     @IBAction func RateButtonPressed(sender: UIStepper) {
         RateField.text = Int(sender.value).description
@@ -67,14 +61,8 @@ class ViewController: UIViewController {
     @IBAction func DeleteButtonPressed(sender: AnyObject) {
         print("nnn \(i) albums.count \(albums?.count)!")
         
-            if ((albums?.count)! == 1){
-                albums!.removeObjectAtIndex(i)
-                emptyArray()
-            } else {
-                albums!.removeObjectAtIndex(i)
-                i = 0
-                changeValues()
-            }
+        Albums.sharedInstance.delete(i)
+        navigationController?.popViewControllerAnimated(true)
         
     }
     
@@ -131,11 +119,11 @@ class ViewController: UIViewController {
     
     func changeValues(){
 
-            ArtistField.text = albums![i].valueForKey("artist") as! String
-            TitleField.text = albums![i].valueForKey("title") as! String
-            GenreField.text = albums![i].valueForKey("genre") as! String
-            YearField.text = albums![i].valueForKey("date")?.stringValue
-            RateField.text = albums![i].valueForKey("rating")?.stringValue
+            ArtistField.text = album!.valueForKey("artist") as! String
+            TitleField.text = album!.valueForKey("title") as! String
+            GenreField.text = album!.valueForKey("genre") as! String
+            YearField.text = album!.valueForKey("date")?.stringValue
+            RateField.text = album!.valueForKey("rating")?.stringValue
         
         DeleteButton.enabled = true
 

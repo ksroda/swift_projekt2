@@ -7,6 +7,10 @@ class MyTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -54,8 +58,8 @@ class MyTableViewController: UITableViewController {
                 }
             } else {
                 vc.album = newAlbum()
-               // vc.albumsLicz = albums!.count + 1
-               // vc.i = albums!.count
+                vc.albumsLicz = albums!.count + 1
+                vc.i = albums!.count
                 //vc.addNewAlbum()
                 
                 
